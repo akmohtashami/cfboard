@@ -1,0 +1,11 @@
+CFBoard
+-------
+
+A very minimalistic code, I wrote as a teacher to monitor my students progress on Codeforces. 
+
+You can assign weights to different level of problems in config.php. 
+processData.php should be called regularly (e.g. using a cron job) to update progress of users. 
+Users can be created via createUser method or by directly inserting to db. 
+
+By default problems from Div.1 contests are ignored to avoid counting overlapping problems twice. You can change this behaviour in contests.php.
+
